@@ -1,0 +1,79 @@
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/drawer";
+@use "@material/list";
+@use "@material/dialog";
+@use "@material/checkbox";
+@use "@material/select/mdc-select";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/linear-progress";
+@use "@material/snackbar/mdc-snackbar";
+@use "@material/button";
+@use "@material/tooltip/styles";
+@use "@material/typography/mdc-typography";
+
+
+@include button.core-styles;
+@include linear-progress.core-styles;
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.core-styles;
+@include icon-button.core-styles;
+@include dialog.core-styles;
+@include checkbox.core-styles;
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  height: 100vh;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: hidden;
+  height: 100%;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+#mask {
+  position: fixed;
+  top: 0;
+  z-index: 8;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.mdc-linear-progress {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color:red;
+  color:red;
+}
+
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+#icp{
+  position: fixed;
+  width: 255px;
+  margin: 0px;
+  padding: 0px;
+  bottom: 1px;
+  color: rgba(0, 0, 0, 0.6);
+}
