@@ -1,0 +1,50 @@
+{
+  "name": "jsoneye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port 8787",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^9.8.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.1.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@material/button": "^7.0.0",
+    "@material/checkbox": "^7.0.0",
+    "@material/dialog": "^7.0.0",
+    "@material/drawer": "^7.0.0",
+    "@material/icon-button": "^7.0.0",
+    "@material/linear-progress": "^7.0.0",
+    "@material/list": "^7.0.0",
+    "@material/menu": "^7.0.0",
+    "@material/menu-surface": "^7.0.0",
+    "@material/ripple": "^7.0.0",
+    "@material/select": "^7.0.0",
+    "@material/snackbar": "^7.0.0",
+    "@material/tooltip": "^8.0.0-canary.2e5711e04.0",
+    "@material/top-app-bar": "^7.0.0",
+    "@material/typography": "^7.0.0",
+    "moment": "^2.27.0",
+    "monaco-editor": "^0.20.0"
+  }
+}

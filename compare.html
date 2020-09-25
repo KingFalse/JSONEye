@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON解析及格式化验证 - JsonEye.cn</title>
+    <link href="bundle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/ico">
+</head>
+<body>
+<header class="mdc-top-app-bar app-bar" id="app-bar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+            <span class="mdc-top-app-bar__title">JSONEYE.CN</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            <button ARIA-DESCRIBEDBY="tooltip-inline" aria-label="aria-label"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" id="inline">close_fullscreen
+            </button>
+            <button aria-describedby="tooltip-search" aria-label="Search"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" id="search">search
+            </button>
+            <button aria-describedby="tooltip-zoom_in" aria-label="aria-label"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" id="zoom_in">zoom_in
+            </button>
+            <button aria-describedby="tooltip-zoom_out" aria-label="aria-label"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" id="zoom_out">zoom_out
+            </button>
+            <button aria-describedby="tooltip-unfold_more" aria-label="aria-label"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" id="theme">nights_stay
+            </button>
+        </section>
+    </div>
+</header>
+
+<aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+    <div class="mdc-drawer__content">
+        <h6 class="mdc-list-group__subheader">功能</h6>
+        <nav class="mdc-list">
+            <a aria-current="page" class="mdc-list-item" href="/">
+                <span class="mdc-list-item__ripple"></span>
+                <i aria-hidden="true" class="material-icons mdc-list-item__graphic">format_indent_increase</i>
+                <span class="mdc-list-item__text">代码格式化</span>
+            </a>
+            <a class="mdc-list-item mdc-list-item--activated" href="/compare.html">
+                <span class="mdc-list-item__ripple"></span>
+                <i aria-hidden="true" class="material-icons mdc-list-item__graphic">compare_arrows</i>
+                <span class="mdc-list-item__text">文本比对</span>
+            </a>
+            <hr class="mdc-list-divider">
+            <h6 class="mdc-list-group__subheader">关于&帮助</h6>
+            <a class="mdc-list-item github" href="https://github.com/KingFalse/JSONEye">
+                <span class="mdc-list-item__ripple"></span>
+                <i aria-hidden="true" class="material-icons mdc-list-item__graphic">code</i>
+                <span class="mdc-list-item__text">GitHub</span>
+            </a>
+            <div id="icp">
+                <h1 align="center" class="mdc-typography--body2">京ICP备20017326号</h1>
+            </div>
+        </nav>
+    </div>
+</aside>
+
+<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust" id="xxx">
+    <main class="main-content" id="main-content"></main>
+</div>
+<div class="mdc-snackbar">
+    <div class="mdc-snackbar__surface">
+        <div aria-live="polite"
+             class="mdc-snackbar__label"
+             role="status">
+            Can't send photo. Retry in 5 seconds.
+        </div>
+        <div class="mdc-snackbar__actions">
+            <button class="mdc-button mdc-snackbar__action" type="button">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Retry</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div id="mask">
+    <div aria-label="Example Progress Bar" aria-valuemax="1" aria-valuemin="0"
+         aria-valuenow="0" class="mdc-linear-progress mdc-linear-progress--indeterminate" role="progressbar">
+        <div class="mdc-linear-progress__buffer">
+            <div class="mdc-linear-progress__buffer-bar"></div>
+            <div class="mdc-linear-progress__buffer-dots"></div>
+        </div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" class="mdc-tooltip" id="tooltip-inline" role="tooltip">
+    <div class="mdc-tooltip__surface">内联</div>
+</div>
+<div aria-hidden="true" class="mdc-tooltip" id="tooltip-search" role="tooltip">
+    <div class="mdc-tooltip__surface">搜索</div>
+</div>
+<div aria-hidden="true" class="mdc-tooltip" id="tooltip-zoom_in" role="tooltip">
+    <div class="mdc-tooltip__surface">放大字体</div>
+</div>
+<div aria-hidden="true" class="mdc-tooltip" id="tooltip-zoom_out" role="tooltip">
+    <div class="mdc-tooltip__surface">缩小字体</div>
+</div>
+<script async src="compare.bundle.js"></script>
+</body>
+
+</html>
